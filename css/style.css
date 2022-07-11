@@ -30,13 +30,15 @@
 .menu_inner .menu_item, .menu_item:hover .menu_inner{
     display: block;
 }
-
+.menu_item_2{
+    display: inline-block;
+}
 .menu_inner_2{
     display: none;
     position: absolute;
     left: 115px;
     top: 40px;     
 }
-.menu_inner_2 .menu_inner, .menu_inner:hover .menu_inner_2{
+.menu_inner_2 .menu_item_2, .menu_item_2:hover .menu_inner_2{
     display: block;
 }
