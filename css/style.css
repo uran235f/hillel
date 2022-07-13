@@ -1,0 +1,33 @@
+*, html, body{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+table, td, th {
+    border: 1px solid gray;
+    padding: 4px;
+}
+th {
+    background-color: gray;
+    color: #fff;
+    text-align: left;
+}
+h3{
+    color:palevioletred;
+}
+.text_1{
+    color: red;
+}
+.text_2, .text_3{
+    color: orange;
+}
+#text_4{
+    color: yellow;
+}
+[title="text_5"]{
+    color: green;
+}
+span, div{
+    color:blue;
+}
