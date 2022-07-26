@@ -1,0 +1,120 @@
+*, html, body{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.animation{
+    font-size: 0;
+    float: right;
+    transition: 5s all;
+    animation: moveCar 10s;
+}
+/* .car{
+    
+} */
+.bulb{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: red;
+    margin-left: 50px;
+    animation: flashing 10s;
+}
+.wheel{
+    height: 60px;
+    display: inline-block;
+    animation: moveWheels 10s;
+}
+.right{
+    margin-left: 130px;
+}
+/* .animation:hover{
+    transform: translate(-1200px)
+}
+.animation:hover .wheel{
+    transform: rotate(45deg);
+    animation-duration: 1s;
+}
+.animation:hover .bulb {
+    background: blue;
+    animation-duration: 1s;
+} */
+@keyframes moveWheels{
+    0%{
+        transform: rotate(45deg);
+    }
+    10%{
+        transform: rotate(90deg);
+    }
+    20%{
+        transform: rotate(135deg);
+    }
+    30%{
+        transform: rotate(180deg);
+    }
+    40%{
+        transform: rotate(225deg);
+    }
+    50%{
+        transform: rotate(270deg);
+    }
+    60%{
+        transform: rotate(315deg);
+    }
+    70%{
+        transform: rotate(360deg);
+    }
+    80%{
+        transform: rotate(45deg);
+    }
+    90%{
+        transform: rotate(90deg);
+    }
+    100%{
+        transform: rotate(135deg);
+    }
+}
+@keyframes flashing{
+    0%{
+        background: blue;
+    }
+    10%{
+        background: red;
+    }
+    20%{
+        background: red;
+    }
+    30%{
+        background: blue;
+    }
+    40%{
+        background: red;
+    }
+    50%{
+        background: blue;
+    }
+    60%{
+        background: red;
+    }
+    70%{
+        background: blue;
+    }
+    80%{
+        background: red;
+    }
+    90%{
+        background: blue;
+    }
+    100%{
+        transform: rotate(135deg);
+    }
+}
+@keyframes moveCar{
+    0%{
+        transform: translate(0)
+    }
+    100%{
+        transform: translate(-1200px)
+    }
+}
